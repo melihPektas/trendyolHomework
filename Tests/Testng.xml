@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" verbose="2" preserve-order="true" >
+    <parameter name="browsers" value="chrome"/>
+    <test verbose="2" preserve-order="true" name="trendyolHomework">
+        <classes>
+            <class name="caseStudy.test.ApiPageTest">
+                <methods>
+                    <include name="apiTest"/>
+                </methods>
+            </class>
+            <class name="caseStudy.test.studyTest">
+                <methods>
+                    <include name="caseStudy1"/>
+                    <include name="caseStudy2"/>
+                    <include name="caseStudy3"/>
+                    <include name="caseStudy4"/>
+                    <include name="caseStudy5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+</suite>
+
+
